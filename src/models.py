@@ -25,14 +25,14 @@ class User(Base):
 class Planets(Base):
     __tablename__ = 'planets'
     id = Column(Integer, primary_key=True)
-    diameter = Column (String(30), nullable = False)
-    rotation_period = Column (String(30), nullable = False)
-    orbital_period = Column (String(30), nullable = False)
-    gravity = Column (String(30), nullable = False)
-    population = Column (String(30), nullable = False)
-    climate = Column (String(30), nullable = False)
-    terrain = Column (String(30), nullable = False)
-    description = Column (String(30), nullable = False)
+    diameter = Column (String(30), nullable = True)
+    rotation_period = Column (String(30), nullable = True)
+    orbital_period = Column (String(30), nullable = True)
+    gravity = Column (String(30), nullable = True)
+    population = Column (String(30), nullable = True)
+    climate = Column (String(30), nullable = True)
+    terrain = Column (String(30), nullable = True)
+    description = Column (String(30), nullable = True)
 
 
     def serialize(self):
@@ -50,13 +50,13 @@ class Planets(Base):
 class Vehicles(Base):
     __tablename__ = 'vehicles'
     id = Column(Integer, primary_key=True)
-    model =Column (String(30), nullable = False)
-    vehicle_class = Column(String(30), nullable = False)
-    manufacturer =Column (String(30), nullable = False)
-    cost_in_credits =Column (String(30), nullable = False)
-    lenght =Column (String(30), nullable = False)
-    crew =Column  (String(30), nullable = False)
-    passengers =Column (String(30), nullable = False)
+    model =Column (String(30), nullable = True)
+    vehicle_class = Column(String(30), nullable = True)
+    manufacturer =Column (String(30), nullable = True)
+    cost_in_credits =Column (String(30), nullable = True)
+    lenght =Column (String(30), nullable = True)
+    crew =Column  (String(30), nullable = True)
+    passengers =Column (String(30), nullable = True)
 
     def serialize(self):
         return{
