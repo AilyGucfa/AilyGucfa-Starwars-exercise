@@ -1,4 +1,4 @@
-#This is my code from https://app.quickdatabasediagrams.com/#/d/NFw7LC
+#This is my diagram code of Starwars project
 ## User
 ----------
 id int PK
